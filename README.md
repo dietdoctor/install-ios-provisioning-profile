@@ -1,4 +1,4 @@
-#Install iOS Provisioning Profile
+# Install iOS Provisioning Profile
 
 Forked from: `@mobileactions/install-ios-provisioning-profile`
 
