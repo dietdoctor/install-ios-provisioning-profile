@@ -17,8 +17,8 @@ jobs:
           node-version: 16
       - name: "Build & test"
         run: |
-          pwd
-          ls -la
+          ls ..
+          ls ../..
           yarn ci
           yarn build
       - uses: "marvinpinto/action-automatic-releases@latest"
