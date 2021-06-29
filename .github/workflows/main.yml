@@ -9,13 +9,14 @@ jobs:
   tagged-release:
     name: "Tagged Release"
     runs-on: "ubuntu-latest"
-
     steps:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
       - name: "Build & test"
         run: |
+          pwd
+          ls -la
           yarn ci
           yarn build
       - uses: "marvinpinto/action-automatic-releases@latest"
