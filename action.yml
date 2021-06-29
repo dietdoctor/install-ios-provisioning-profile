@@ -1,0 +1,12 @@
+name: 'Install iOS Provisioning Profile'
+description: 'This action can install ios provisioning profile on build server'
+author: 'Diet Doctor'
+inputs:
+  profile-base64:
+    description: 'Provisioning profile provided in base64'
+    required: true
+runs:
+  using: 'node12'
+  main: 'lib/install_provisioning_profile.js'
+  post: 'lib/post_install.js'
+  post-if: 'success()'
