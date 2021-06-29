@@ -15,12 +15,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - name: "Build & test"
-        run: |
-          ls ..
-          ls ../..
-          yarn ci
-          yarn build
+      - run: yarn ci
+      - run: yarn build
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
