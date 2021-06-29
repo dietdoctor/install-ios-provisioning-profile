@@ -26,7 +26,6 @@ jobs:
           automatic_release_tag: "latest"
           files: |
             lib/**/*.js
-            node_modules/**/*
             LICENSE
             action.yml
             package.json
