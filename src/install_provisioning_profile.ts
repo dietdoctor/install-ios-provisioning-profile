@@ -20,7 +20,7 @@ export async function installProvisioningProfileTask() {
         }
 
         // BASE64 encoded .mobileprovision passed through GitHub secret
-        let encodedProfileData = core.getInput('encoded-profile');
+        let encodedProfileData = core.getInput('profile-base64');
 
         // Temporary file locations
         let provisioningProfileFile = '/tmp/profile.mobileprovision';
