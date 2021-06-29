@@ -20,12 +20,3 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          files: |
-            LICENSE
-            lib/*
-            package.json
-            tsconfig.json
-            yarn.lock
-            action.yml
-            README.md
-            node_modules/*
