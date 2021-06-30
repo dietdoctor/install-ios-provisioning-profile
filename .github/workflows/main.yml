@@ -19,7 +19,7 @@ jobs:
           yarn ci
           yarn build
       - run: ls -la
-      = run: pwd
+      - run: pwd
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
