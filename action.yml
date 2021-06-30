@@ -7,6 +7,6 @@ inputs:
     required: true
 runs:
   using: 'node12'
-  main: 'lib/install_provisioning_profile.js'
-  post: 'lib/post_install.js'
+  main: 'dist/instsall/index.js'
+  post: 'dist/post-install/post_install.js'
   post-if: 'success()'
