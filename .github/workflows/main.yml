@@ -15,18 +15,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - run: | 
-          yarn ci
-          yarn build
-      - run: |
-          mkdir artifacts
-          mv package.json artifacts
-          mv action.yml artifacts
-          mv lib artifacts
-          mv tsconfig.json artifacts
-          mv LICENSE artifacts
-          mv node_modules artifacts
-      - uses: actions/upload-artifact@1.0.0
+      - run: yarn ci
+      - run: yarn build
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: artifacts
-          path: artifacts
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          automatic_release_tag: "latest"
