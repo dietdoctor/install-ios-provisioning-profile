@@ -2,8 +2,7 @@
   "scripts": {
     "build": "tsc && ./scripts/build.sh",
     "ci": "yarn install --frozen-lockfile",
-    "preci": "rm -rf node_modules",
-    "precommit": "yarn build"
+    "preci": "rm -rf node_modules"
   },
   "dependencies": {
     "@actions/core": "^1.4.0",
