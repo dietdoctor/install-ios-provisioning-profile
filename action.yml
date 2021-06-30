@@ -8,5 +8,5 @@ inputs:
 runs:
   using: 'node12'
   main: 'dist/install/index.js'
-  post: 'dist/post-install/post_install.js'
+  post: 'dist/post-install/index.js'
   post-if: 'success()'
