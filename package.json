@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && ./scripts/build.sh",
     "ci": "yarn install --frozen-lockfile",
     "preci": "rm -rf node_modules"
   },
@@ -10,7 +10,7 @@
     "@actions/io": "^1.1.1",
     "tsc": "^2.0.3"
   },
-  "devDependencies": {
+  "devDepenposdencies": {
     "@types/node": "^15.12.5",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.4"

@@ -15,7 +15,7 @@ Example:
 ```
 steps:
 - name: Install provisioning profile
-    uses: dietdoctor/install-ios-provisioning-profile@v1
+    uses: dietdoctor/install-ios-provisioning-profile@latest
     with:
        profile-base64: ${{ secrets.PROVISIONING_PROFILE }}
 ```
