@@ -7,6 +7,6 @@ inputs:
     required: true
 runs:
   using: 'node12'
-  main: 'dist/instsall/index.js'
+  main: 'dist/install/index.js'
   post: 'dist/post-install/post_install.js'
   post-if: 'success()'
