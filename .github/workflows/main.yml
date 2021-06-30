@@ -17,4 +17,8 @@ jobs:
           node-version: 16
       - run: yarn ci
       - run: yarn build
-      - uses: technote-space/release-github-actions@v6
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          automatic_release_tag: "latest"
