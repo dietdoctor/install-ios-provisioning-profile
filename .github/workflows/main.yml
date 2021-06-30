@@ -25,6 +25,7 @@ jobs:
           mv lib artifacts
           mv tsconfig.json artifacts
           mv LICENSE artifacts
+          mv node_modules artifacts
       - uses: actions/upload-artifact@1.0.0
         with:
           name: artifacts
