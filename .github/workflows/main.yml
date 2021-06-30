@@ -25,3 +25,4 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           automatic_release_tag: "latest"
+          files: /home/runner/work/install-ios-provisioning-profile/install-ios-provisioning-profile/**
