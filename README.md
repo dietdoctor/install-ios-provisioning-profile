@@ -8,7 +8,7 @@ Run the following command to copy base64 encoded format of your provisioning fil
 base64 <PROVISIONING PROFILE FILE> | pbcopy
 ```
 
-Then paste it into yout Github secrets.
+Then paste it into your Github secrets.
 
 Example: 
 
