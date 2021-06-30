@@ -18,11 +18,14 @@ jobs:
       - run: | 
           yarn ci
           yarn build
-      - run: ls -la
-      - run: pwd
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - run: |
+          mkdir artifacts
+          mv package.json artifacts
+          mv action.yml artifacts
+          mv lib artifacts
+          mv tsconfig.json artifacts
+          mv LICENSE artifacts
+      - uses: actions/upload-artifact@1.0.0
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          automatic_release_tag: "latest"
-          files: /home/runner/work/install-ios-provisioning-profile/install-ios-provisioning-profile/**
+          name: artifacts
+          path: artifacts
