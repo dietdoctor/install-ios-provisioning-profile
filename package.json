@@ -5,11 +5,11 @@
     "preci": "rm -rf node_modules"
   },
   "dependencies": {
-    "@actions/core": "^1.4.0",
-    "@actions/exec": "^1.1.0",
-    "@actions/io": "^1.1.1",
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/io": "^1.1.2",
     "semver": "^7.3.5",
-    "tsc": "^2.0.3"
+    "tsc": "^2.0.4"
   },
   "devDependencies": {
     "@types/node": "^15.12.5",
