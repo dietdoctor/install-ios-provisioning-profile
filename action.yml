@@ -6,7 +6,7 @@ inputs:
     description: 'Provisioning profile provided in base64'
     required: true
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/task/index.js'
   post: 'dist/post-task/index.js'
   post-if: 'success()'
