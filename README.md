@@ -5,7 +5,7 @@ Forked from: `@mobileactions/install-ios-provisioning-profile`
 Run the following command to copy base64 encoded format of your provisioning file into your system clipboard:
 
 ```bash
-base64 <PROVISIONING PROFILE FILE> | pbcopy
+base64 -i <PROVISIONING PROFILE FILE> | pbcopy
 ```
 
 Then paste it into your Github secrets.
