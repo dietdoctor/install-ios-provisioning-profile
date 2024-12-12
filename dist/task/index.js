@@ -841,8 +841,9 @@ function installProvisioningProfileTask() {
                             try {
                                 const info = yield sign.installProvisioningProfile(provisioningProfileFile);
                                 // set the provisioning profile output variable.
-                                core.debug("setting environment variables privisioningProfileUuid & Name");
+                                core.debug("setting environment variables provisioning ProfileUuid & Name");
                                 core.setOutput("APPLE_PROV_PROFILE_UUID", info.provProfileUUID);
+                                core.setOutput("APPLE_PROV_PROFILE_NAME", info.provProfileName || "");
                                 core.exportVariable("provisioningProfileUuid", info.provProfileUUID);
                                 core.exportVariable("provisioningProfileName", info.provProfileName || "");
                             }
